@@ -48,3 +48,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "rspec-rails", "~> 5.0", :groups => [:development, :test]
+
+gem "rails-controller-testing", "~> 1.0", :groups => [:development, :test]
