@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :set_item, only: %i[ show edit update destroy ]
+  before_action :set_item, only: %i[ show edit update destroy complete ]
 
   # GET /items or /items.json
   def index
@@ -53,6 +53,14 @@ class ItemsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to items_url, notice: "Item was successfully destroyed." }
       format.json { head :no_content }
+    end
+  end
+
+  # POST /items/1
+  def complete
+    @item.complete!
+    respond_to do |format|
+      format.html { redirect_to items_url, notice: "Item was successfully completed." }
     end
   end
 
