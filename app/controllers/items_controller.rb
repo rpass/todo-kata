@@ -56,6 +56,14 @@ class ItemsController < ApplicationController
     end
   end
 
+  # DELETE /items
+  def delete_all
+    Item.delete_all
+    respond_to do |format|
+      format.html { redirect_to items_url, notice: "All items have been deleted" }
+    end
+  end
+
   # POST /items/1
   def complete
     @item.complete!

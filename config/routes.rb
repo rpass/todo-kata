@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   root to: 'items#index'
 
   resources :items do
+    collection do
+      delete 'delete_all'
+    end
+
     member do
       post 'complete'
     end
