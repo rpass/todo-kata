@@ -16,7 +16,7 @@ Finally, set yourself an improvement focus which will get you toward your goal: 
 Build a todo app that allows a user to
 * create, read, update, delete and complete a todo item from their list
 * delete all items from their list
-* name their list
+* re/name their list without a full page reload
 * start a new list and navigate between the two
 
 ---
