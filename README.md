@@ -21,6 +21,6 @@ Build a todo app that allows a user to
 
 ---
 Stretch goals
-* authenticate with a username and password
-* each user can only interact with their own list
-* a user can tag another user on an item and it appears in that other user's list
+* authentication: username and password
+* authorization: user can only interact with their own lists
+* tagging: user can be tagged by their email on an item and it appears in their list
